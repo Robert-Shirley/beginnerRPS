@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Page Title</title>
+  <meta charset="UTF-8"/>
+  <link rel="script" href="script.js">
+</head>
+<body>
+<script>
+  
+var myArray = [
+  "rock",
+  "paper",
+  "scissors"
+];
+let humancount = 0;
+let compcount = 0;
+for (let i=0;i<5;i++){
+  let counti = i + +1;
+ let random1 = myArray[Math.floor(Math.random() * myArray.length)];
+  let round1 = prompt("Rock, Paper, or Scissors?")
+  let testing = 0;
+  let round1LC =  round1.toLowerCase();
+  while (testing == 0)
+{
+if(round1LC == "rock" || round1LC == "paper" || round1LC == "scissors")
+{
+    testing = 1;
+}
+    else
+{
+    round1LC = prompt("Incorrect spelling: Rock, Paper, or Scissors?")
+    }
+}
+  console.log(round1LC)
+if (random1 == round1LC)
+{
+  document.write("Round " + counti + " TIE");
+  document.write('<br/>');
+}
+else if (random1 == "rock" && round1LC == "paper")
+{
+  
+  document.write("Round " + counti + " The human won this round!");
+  document.write('<br/>');
+  humancount++;
+}
+else if (random1 == "paper" && round1LC == "scissors")
+{
+  
+  document.write("Round " + counti + " The human won this round!");
+  document.write('<br/>');
+  humancount++;
+}
+else if (random1 == "scissors" && round1LC == "rock")
+{
+  
+  document.write("Round " + counti + " The human won this round!");
+  document.write('<br/>');
+  humancount++;
+}
+else if (random1 == "rock" && round1LC == "scissors")
+{
+
+  document.write("Round " + counti + " The computer won this round!");
+  document.write('<br/>');
+  compcount++;
+}
+else if (random1 == "paper" && round1LC == "rock")
+{
+  
+  document.write("Round " + counti + " The computer won this round!");
+  document.write('<br/>');
+  compcount++;
+}
+else if (random1 == "scissors" && round1LC == "paper")
+{
+ 
+  document.write("Round " + counti + " The computer won this round!");
+  document.write('<br/>');
+  compcount++;
+}
+console.log(compcount)
+console.log(humancount)
+}
+document.write("<br/>")
+document.write("<br/>")
+document.write("<br/>")
+if(compcount == humancount)
+{
+  document.write("It was a tie!")
+}
+else if (compcount > humancount)
+{document.write("The computer won")}
+
+else {document.write("You WON! NICE JOB IM SO PROUD")}
+  </script>
+
+
+</body>
+</html>
