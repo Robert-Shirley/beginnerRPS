@@ -1,0 +1,5 @@
+Finished the basis for this project. It is completely functional right now and I did go above and beyond a bit. The UI isn't that much, but Odin wasn't asking for that. I already had a concrete foundation in all types of conditionals, so this was pretty easy honestly. I did struggle to put a function inside of a for loop though, so something I should look into. It took me a while to figure that on
+
+
+4/30/21
+Well, it's a few days later. I've been cruising through this bootcamp so far, at least for this first week. I added a functional UI and changed how the game is played a bit. This version is a lot more complicated, and has animation, sound effects, and a live tally. It was more difficult than I initially thought it would be. I did learn a lot though and I think it's kinda cool. I was able to use some of the previous code, but I had to add more functions and code. The HTML and CSS are completely different now as well. Let's see what comes next

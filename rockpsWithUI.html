@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Page Title</title>
+  <meta charset="UTF-8"/>
+  <link rel="script" href="script.js">
+  <link rel="stylesheet" href="Rock.css">
+</head>
+<body>
+
+    <div class="largeText">
+        <div class="humanText">
+            <kbd>Human</kbd>
+        </div>
+        <div class="humanText">
+            <kbd>Computer</kbd>
+        </div>
+    </div>
+
+
+     
+ <div  class="buttons">
+        <div data-key="Rock" class="buttonh">
+            <button onclick = "Rock()" class="invisible">
+          <kbd>Rock</kbd></button>
+          
+        </div>
+        <div data-key="Paper" class="buttonh">
+            <button onclick = "Paper()" class="invisible">
+          <kbd>Paper</kbd></button>
+         
+        </div>
+        <div data-key="Scissors" class="buttonh">
+          <button onclick = "Scissors()" class ="invisible"><kbd>Scissors</kbd></button>
+          
+        </div>
+        <div  class="buttonspacer">
+                      
+          </div>
+        <div data-key="CRock" class="buttonC">
+          <kbd>Rock</kbd>
+         
+        </div>
+        <div data-key="CPaper" class="buttonC">
+          <kbd>Paper</kbd>
+         
+        </div>
+        <div data-key="CScissors" class="buttonC">
+            
+          <kbd>Scissors</kbd>
+ </div>
+ </div>
+
+<div class ="logger">
+</br></br></br>
+   <h1 style="font-size: 40px;">Tally </h1> 
+
+<h1 style="font-size: 40px;">Human: <span id="humanCount"></span></h1> 
+</br></br></br>
+<h1 style="font-size: 40px;">Computer: <span id="compCount"></span></h1> 
+</div>
+
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
